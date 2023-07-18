@@ -312,7 +312,7 @@ main {
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3.8rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -628,4 +628,197 @@ a.btn-small:hover {
 .card-background-img-3 {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
     url(img/nat-7.jpg);
+}
+
+.btn-tours-container {
+  text-align: center;
+}
+a.btn-tours {
+  /* background-color: #28b485; */
+  /* color: hsl(0, 0%, 30%) !important; */
+  color: #f7f7f7;
+  padding: 1.5rem 3rem;
+  border-radius: 10000px;
+  display: inline-block;
+  margin: 8rem auto;
+  text-transform: uppercase;
+  transition: all 300ms;
+  position: relative;
+  z-index: 1;
+}
+
+a.btn-tours::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: hsl(0, 0%, 87%); */
+  background-color: #28b485;
+  z-index: -1;
+  width: 110%;
+  height: 110%;
+  /* border-radius: 11111px; */
+  transition: all 300ms;
+}
+
+a.btn-tours::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  /* background-color: yellow; */
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  outline: 1px solid transparent;
+  /* border-radius: 11111px; */
+  transition: all 300ms;
+}
+
+a.btn-tours:hover::after {
+  /* background-color: #28b485; */
+  width: 0;
+  height: 0;
+}
+a.btn-tours:hover::before {
+  outline: 1px solid gray;
+  transform: scale(0.95);
+}
+
+a.btn-tours:hover {
+  color: #333 !important;
+}
+
+.section-testimonial {
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-section:not(:last-child) {
+  margin-bottom: 6.8rem;
+}
+.testimonial-container {
+  position: relative;
+  padding: 10rem 8.8rem;
+  /* z-index: 11; */
+}
+
+.testimonial-section > div {
+  transform: skewX(-12deg);
+  /* border: 1px solid black; */
+  box-shadow: 3px 10px 2.4rem hsla(0, 0%, 0%, 0.137);
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 4.8rem;
+  background-color: hsla(0, 0%, 97%, 0.58);
+}
+.testimonial-section > div > div {
+  transform: skewX(12deg);
+}
+
+.testimonial-flex {
+  /* display: flex;
+  gap: 2.4rem; */
+}
+
+.testimonial-flex img {
+  width: 200px;
+  height: 150px;
+  display: block;
+  transform: scale(1.4) translateX(-20px);
+  transition: all 500ms;
+}
+.testimonial-flex figure {
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 500ms;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  /* border: 1px solid gray; */
+  offset-path: 20px;
+  shape-outside: circle(50% at 50% 50%);
+  margin-right: 1.8rem;
+}
+
+.one .testimonial-flex figure::after {
+  content: "mahnoor \A shaikh";
+}
+.two .testimonial-flex figure::after {
+  content: "bilal \A jokhio";
+}
+
+.testimonial-flex figure::after {
+  white-space: pre;
+  text-align: center;
+  word-wrap: break-word;
+  position: absolute;
+  /* top: 0; */
+  top: 82px;
+  left: 0;
+  color: transparent;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.testimonial-flex figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+.testimonial-flex:hover figure::after {
+  top: 0;
+  color: #f7f7f7;
+  /* background-color: #f7f7f7; */
+}
+
+.testimonial-flex:hover figure:before {
+  backdrop-filter: brightness(0.8) blur(2px);
+}
+
+.testimonial-flex:hover img {
+  transform: scale(1.2) translateX(-20px);
+}
+
+.testimonial-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.center {
+  text-align: center;
 }
