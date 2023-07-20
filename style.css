@@ -862,7 +862,7 @@ a.btn-tours:hover {
 }
 .form-section {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-  padding: 8rem 2.4rem;
+  padding: 14rem 0rem;
 }
 
 .form-container {
@@ -874,6 +874,9 @@ a.btn-tours:hover {
     ),
     url(img/nat-10.jpg);
   padding: 6rem;
+  width: 1100px;
+  max-width: 1150px;
+  margin: 0px auto;
 }
 
 .align {
@@ -960,4 +963,55 @@ input::placeholder {
 .form-btn:hover {
   background-color: #7ed56f;
   color: hsl(0, 0%, 77%);
+}
+
+.main-footer {
+  background-color: #333;
+  padding: 10rem 0;
+
+  color: #f7f7f7;
+}
+
+.footer-img {
+  text-align: center;
+}
+
+.footer-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3.8rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.footer-nav a {
+  color: #f7f7f7 !important;
+  text-transform: uppercase;
+  display: block;
+  transition: all 300ms;
+}
+.copyright-container {
+  justify-self: center;
+  font-size: 1.4rem;
+  word-spacing: 2px;
+}
+
+.name {
+  display: inline-block;
+  transition: all 300ms;
+  word-spacing: 0px;
+}
+.footer-nav a:hover,
+.name:hover {
+  color: #55c57a !important;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  -webkit-transform: rotate(5deg) scale(1.2);
+  transform: rotate(5deg) scale(1.2);
 }
