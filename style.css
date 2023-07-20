@@ -822,3 +822,142 @@ a.btn-tours:hover {
 .center {
   text-align: center;
 }
+.c {
+  border-radius: 50%;
+
+  display: inline-block;
+}
+
+/*  */
+
+.toggle-radio {
+  display: none;
+}
+
+.radio-child span {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  outline: 0.5rem solid #55c57a;
+  border-radius: 50%;
+  position: relative;
+  transition: all 400ms;
+}
+
+.radio-child span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  background-color: #55c57a;
+  border-radius: 50%;
+  opacity: 0;
+}
+.toggle-radio:checked + label span::after {
+  opacity: 1;
+}
+.form-section {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  padding: 8rem 2.4rem;
+}
+
+.form-container {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url(img/nat-10.jpg);
+  padding: 6rem;
+}
+
+.align {
+  display: inline-block;
+  margin-bottom: 4.8rem;
+}
+.align:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.form-container .input {
+  padding: 1.8rem;
+  display: block;
+  max-width: 420px;
+  width: 100%;
+
+  border: none;
+  outline: none;
+  border-bottom: 3px solid transparent;
+  transition: border 400ms;
+}
+
+.m-bottom {
+  margin-bottom: 2.4rem;
+}
+
+input:placeholder-shown + label {
+  transform: translateY(-5.6rem);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.m-bottom label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 0rem 0rem 1.8rem;
+  letter-spacing: 0.1px;
+  color: #777;
+  transition: all 400ms;
+  /* opacity: 1; */
+  /* transform: translateY(4rem); */
+}
+
+.form-container .input1:focus {
+  border-bottom-color: rgb(255, 100, 90);
+}
+.form-container .input2:focus {
+  border-bottom-color: #28b485;
+}
+
+.radio-container {
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-child label {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+}
+.form-btn {
+  /* background-image: linear-gradient(to right bottom, #7ed56f, #28b485); */
+  background-color: #28b485;
+  padding: 1rem 2rem;
+  color: #f7f7f7 !important;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  transition: all 400ms;
+}
+
+.form-btn:hover {
+  background-color: #7ed56f;
+  color: hsl(0, 0%, 77%);
+}
